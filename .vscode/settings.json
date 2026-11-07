@@ -1,0 +1,7 @@
+{
+  "liveServer.settings.port": 8080,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.file": "index.html",
+  "debug.onTaskErrors": "showErrors",
+  "debug.allowBreakpointsEverywhere": false
+}

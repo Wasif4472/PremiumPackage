@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Black Sapphire Systems — medical billing, web development, and SEO under one corporate partner."
+    />
+    <title>Black Sapphire Systems | Medical Billing, Web Development &amp; SEO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("bsc-theme") === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true">
+      <div class="page-bg__mesh"></div>
+      <div class="page-bg__grid"></div>
+      <div class="page-bg__glow page-bg__glow--hero"></div>
+      <div class="page-bg__glow page-bg__glow--services"></div>
+      <div class="floating-shapes">
+        <span class="shape shape--1"></span>
+        <span class="shape shape--2"></span>
+        <span class="shape shape--3"></span>
+        <span class="shape shape--4"></span>
+      </div>
+      <div class="page-bg__noise"></div>
+    </div>
+
+    <header class="header">
+      <a href="#" class="logo">
+        <span class="logo__mark">
+          <img
+            src="assets/projects/logfinal.png"
+            alt="Black Sapphire Systems"
+            class="logo__img"
+            width="64"
+            height="50"
+            decoding="async"
+          />
+        </span>
+        <span class="logo__text">
+          <span class="logo__brand">Black Sapphire</span>
+          <span class="logo__corp">Systems</span>
+        </span>
+      </a>
+      <div class="header__actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Switch to light mode"
+          aria-pressed="false"
+        >
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.75" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linecap="round"
+            />
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20 14.5A8.5 8.5 0 0 1 9.5 4 7 7 0 1 0 20 14.5Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+        <a href="#contact" class="btn btn--header-cta"><span>Contact us</span></a>
+      </div>
+    </header>
+
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <div class="nav__track">
+        <a href="#services" class="nav__link"><span>Services</span></a>
+        <a href="#past-work" class="nav__link"><span>Past work</span></a>
+        <a href="#current-projects" class="nav__link"><span>Projects</span></a>
+        <a href="#why-us" class="nav__link"><span>Why us</span></a>
+        <a href="#process" class="nav__link"><span>Process</span></a>
+        <a href="#clients" class="nav__link"><span>Feedback</span></a>
+        <a href="#contact" class="nav__link"><span>Contact</span></a>
+      </div>
+    </nav>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Medical Billing</span><span class="marquee__dot">◆</span>
+          <span>Web Development</span><span class="marquee__dot">◆</span>
+          <span>SEO</span><span class="marquee__dot">◆</span>
+          <span>Black Sapphire Systems</span><span class="marquee__dot">◆</span>
+          <span>Medical Billing</span><span class="marquee__dot">◆</span>
+          <span>Web Development</span><span class="marquee__dot">◆</span>
+          <span>SEO</span><span class="marquee__dot">◆</span>
+          <span>Black Sapphire Systems</span><span class="marquee__dot">◆</span>
+          <span>Medical Billing</span><span class="marquee__dot">◆</span>
+          <span>Web Development</span><span class="marquee__dot">◆</span>
+          <span>SEO</span><span class="marquee__dot">◆</span>
+          <span>Black Sapphire Systems</span><span class="marquee__dot">◆</span>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>Medical Billing</span><span class="marquee__dot">◆</span>
+          <span>Web Development</span><span class="marquee__dot">◆</span>
+          <span>SEO</span><span class="marquee__dot">◆</span>
+          <span>Black Sapphire Systems</span><span class="marquee__dot">◆</span>
+          <span>Medical Billing</span><span class="marquee__dot">◆</span>
+          <span>Web Development</span><span class="marquee__dot">◆</span>
+          <span>SEO</span><span class="marquee__dot">◆</span>
+          <span>Black Sapphire Systems</span><span class="marquee__dot">◆</span>
+          <span>Medical Billing</span><span class="marquee__dot">◆</span>
+          <span>Web Development</span><span class="marquee__dot">◆</span>
+          <span>SEO</span><span class="marquee__dot">◆</span>
+          <span>Black Sapphire Systems</span><span class="marquee__dot">◆</span>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- 1. Hero -->
+      <section class="hero reveal" id="home">
+        <a href="#services" class="scroll-indicator" id="scroll-indicator" aria-label="Scroll down">
+          <span class="scroll-indicator__line scroll-indicator__line--top" aria-hidden="true"></span>
+          <span class="scroll-indicator__label">Scroll</span>
+          <span class="scroll-indicator__track" aria-hidden="true">
+            <span class="scroll-indicator__line scroll-indicator__line--bottom"></span>
+            <span class="scroll-indicator__arrow-wrap" aria-hidden="true">
+              <span class="scroll-indicator__arrow"></span>
+            </span>
+          </span>
+        </a>
+        <div class="hero__content">
+          <h1 class="hero__title anim-fade-up" style="--delay: 0.15s">
+            One partner for
+            <span class="hero__line hero__line--accent">
+              <span class="hero__dynamic" aria-live="polite">
+                <span id="typewriter" class="hero__accent text-shimmer">billing</span
+                ><span class="hero__cursor">|</span>
+              </span>
+            </span>
+            WEB, SEO &amp;<br class="hero__br" aria-hidden="true" /> Medical Billing
+          </h1>
+          <p class="hero__subtitle anim-fade-up" style="--delay: 0.28s">
+            Award-winning medical billing, web development &amp; SEO partner.
+          </p>
+          <div class="hero__actions anim-fade-up" style="--delay: 0.38s">
+            <a href="#contact" class="btn btn--ghost btn--lg btn--magnetic">
+              <span>Book a call</span>
+            </a>
+          </div>
+          <div class="hero__proof anim-fade-up" style="--delay: 0.48s">
+            <div class="proof-clutch">
+              <span class="proof-clutch__label">Reviewed on</span>
+              <div class="proof-clutch__rating">
+                <span class="proof-clutch__stars" aria-hidden="true">★★★★★</span>
+                <span class="proof-clutch__score">4.9</span>
+              </div>
+              <div class="proof-clutch__meta">
+                <span class="proof-clutch__brand">Clutch</span>
+                <span class="proof-clutch__reviews">39 reviews</span>
+              </div>
+            </div>
+            <div class="proof-award" aria-label="Industry excellence award">
+              <span class="proof-award__icon" aria-hidden="true"></span>
+              <span class="proof-award__text">
+                <span class="proof-award__name">effie</span>
+                <span class="proof-award__tag">AWARDS</span>
+              </span>
+            </div>
+            <div class="proof-logos" aria-label="Trusted by leading brands">
+              <span class="proof-logo">B/S/H/</span>
+              <span class="proof-logo">CoachHub</span>
+              <span class="proof-logo proof-logo--wide">SKILL DYNAMICS</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual anim-scale-in" style="--delay: 0.3s">
+          <div class="gem-scene" aria-label="Black Sapphire Systems diamond emblem">
+            <canvas id="gem-canvas" class="gem-canvas" aria-hidden="true"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats banner -->
+      <section class="stats-banner reveal" aria-label="Company achievements">
+        <svg class="stats-banner__defs" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="stat-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f8e2b0" />
+              <stop offset="45%" stop-color="#d4a853" />
+              <stop offset="100%" stop-color="#f0c66a" />
+            </linearGradient>
+            <linearGradient id="stat-silver" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="50%" stop-color="#b8bcc6" />
+              <stop offset="100%" stop-color="#6f7682" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="stats-banner__inner">
+          <article class="stat-card reveal-child">
+            <div class="stat-card__icon stat-card__icon--ring" aria-hidden="true">
+              <svg viewBox="0 0 120 120" class="stat-card__svg">
+                <circle class="stat-card__ring" cx="60" cy="60" r="50" />
+                <circle class="stat-card__spark" cx="88" cy="28" r="3.5" />
+                <g class="stat-card__gem-bg" transform="translate(60 58) scale(0.72) translate(-60 -58)">
+                  <polygon points="60,36 76,52 60,76 44,52" fill="url(#stat-silver)" />
+                  <polygon points="60,36 76,52 60,52 44,52" fill="rgba(255,255,255,0.38)" />
+                  <polygon points="44,52 60,52 60,76 44,52" fill="rgba(0,0,0,0.28)" />
+                  <polygon points="60,52 76,52 60,76 60,52" fill="rgba(255,255,255,0.14)" />
+                </g>
+              </svg>
+              <p class="stat-card__stat stat-card__stat--in">
+                <span data-count="3">0</span>
+              </p>
+            </div>
+            <p class="stat-card__label">Core services</p>
+          </article>
+
+          <article class="stat-card reveal-child" style="--delay: 0.08s">
+            <div class="stat-card__icon stat-card__icon--ring" aria-hidden="true">
+              <svg viewBox="0 0 120 120" class="stat-card__svg stat-card__svg--progress">
+                <circle class="stat-card__ring stat-card__ring--track" cx="60" cy="60" r="50" />
+                <circle
+                  class="stat-card__progress"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  fill="none"
+                  stroke="url(#stat-gold)"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  data-progress="98"
+                />
+              </svg>
+              <p class="stat-card__stat stat-card__stat--in">
+                <span data-count="98">0</span><span class="stat-card__suffix">%</span>
+              </p>
+            </div>
+            <p class="stat-card__label">Client satisfaction</p>
+          </article>
+
+          <article class="stat-card reveal-child" style="--delay: 0.16s">
+            <div class="stat-card__icon stat-card__icon--headset" aria-hidden="true">
+              <svg viewBox="0 0 120 120" class="stat-card__svg">
+                <path
+                  class="stat-card__gold-stroke"
+                  d="M34 58c0-18 11-30 26-30s26 12 26 30v6"
+                  fill="none"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                />
+                <rect class="stat-card__gold-stroke" x="24" y="62" width="14" height="22" rx="6" fill="none" stroke-width="3" />
+                <rect class="stat-card__gold-stroke" x="82" y="62" width="14" height="22" rx="6" fill="none" stroke-width="3" />
+                <path
+                  class="stat-card__gold-stroke"
+                  d="M96 78c6 0 10 4 10 10v3"
+                  fill="none"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p class="stat-card__stat stat-card__stat--in stat-card__stat--compact">24<span class="stat-card__suffix">/7</span></p>
+            </div>
+            <p class="stat-card__label">Dedicated support</p>
+          </article>
+
+          <article class="stat-card reveal-child" style="--delay: 0.24s">
+            <div class="stat-card__icon stat-card__icon--shield" aria-hidden="true">
+              <svg viewBox="0 0 120 120" class="stat-card__svg">
+                <path
+                  class="stat-card__shield"
+                  d="M60 18 L92 34 L92 72 Q92 94 60 104 Q28 94 28 72 L28 34 Z"
+                />
+                <circle class="stat-card__spark" cx="90" cy="26" r="3.5" />
+              </svg>
+              <p class="stat-card__stat stat-card__stat--in">
+                <span data-count="150">0</span><span class="stat-card__suffix">+</span>
+              </p>
+            </div>
+            <p class="stat-card__label">Projects delivered</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2. Services -->
+      <div class="services-wrap">
+        <div class="services-wave" aria-hidden="true"></div>
+        <section class="services-strip reveal" id="services">
+          <div class="section__intro section__intro--left reveal-child">
+            <span class="section__eyebrow">What we offer</span>
+            <h2 class="section__title title-gradient">Our services</h2>
+            <p class="section__lead section__lead--services">
+              Black Sapphire Systems unifies healthcare revenue operations and
+              digital growth. Choose one service or combine all three under a
+              single corporate partner.
+            </p>
+          </div>
+          <div class="services-grid services-grid--corp">
+            <article class="service-card service-card--medical reveal-child" style="--delay: 0.05s">
+              <div class="service-card__border" aria-hidden="true"></div>
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+                  <rect x="9" y="3" width="6" height="4" rx="1" />
+                  <path d="M8 13c.8 0 1.2-1.6 2.4-1.6S11.6 13 12.4 13s1.2-1.6 2.4-1.6S16.2 13 17 13" />
+                </svg>
+              </div>
+              <h2 class="service-card__title">Medical Billing.</h2>
+              <p class="service-card__text">
+                End-to-end revenue cycle support—claims, coding, denials, and
+                reimbursements so your practice gets paid faster and stays compliant.
+              </p>
+              <a href="#contact" class="service-card__link"
+                >Get started <span class="arrow-slide">→</span></a
+              >
+            </article>
+            <article class="service-card service-card--web reveal-child" style="--delay: 0.12s">
+              <div class="service-card__border" aria-hidden="true"></div>
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8" />
+                  <path d="M12 17v4" />
+                  <path d="M8 8l-2 4 2 4" />
+                  <path d="M16 8l2 4-2 4" />
+                  <path d="M11 12h2" />
+                </svg>
+              </div>
+              <h2 class="service-card__title">Web Development.</h2>
+              <p class="service-card__text">
+                Custom websites, landing pages, and web applications—responsive,
+                fast, and built to represent your brand with confidence.
+              </p>
+              <a href="#contact" class="service-card__link"
+                >Get started <span class="arrow-slide">→</span></a
+              >
+            </article>
+            <article class="service-card service-card--seo reveal-child" style="--delay: 0.19s">
+              <div class="service-card__border" aria-hidden="true"></div>
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="10" cy="10" r="6.5" />
+                  <path d="M15.5 15.5L21 21" />
+                  <path d="M7 13l2.5-3 2 2.5L14 9" />
+                </svg>
+              </div>
+              <h2 class="service-card__title">SEO &amp; Digital Growth.</h2>
+              <p class="service-card__text">
+                Search strategy, on-page optimization, and content that ranks—turning
+                organic traffic into leads and measurable business growth.
+              </p>
+              <a href="#contact" class="service-card__link"
+                >Get started <span class="arrow-slide">→</span></a
+              >
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- 3. Client stories -->
+      <section class="section section--testimonials reveal" id="clients">
+        <div class="section__intro reveal-child">
+          <span class="section__eyebrow">Client stories</span>
+          <h2 class="section__title title-gradient">What our partners say</h2>
+          <p class="section__lead">
+            Real feedback from healthcare, SaaS, and growth teams we have supported
+            across billing, web, and SEO.
+          </p>
+        </div>
+        <div class="testimonial-slider reveal-child">
+          <div class="testimonial-track" id="testimonial-track" tabindex="0" aria-label="Client testimonials">
+            <article class="testimonial-card testimonial-card--billing">
+              <div class="testimonial-card__border" aria-hidden="true"></div>
+              <div class="testimonial-card__glow" aria-hidden="true"></div>
+              <div class="testimonial-card__top">
+                <div class="testimonial-card__logo">APEX<span>CLINIC</span></div>
+                <span class="testimonial-card__rating" aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                <span class="testimonial-card__mark" aria-hidden="true">“</span>
+                Black Sapphire Systems rebuilt our revenue cycle across six locations.
+                Denials dropped fast and leadership finally has one dashboard they trust.
+              </blockquote>
+              <footer class="testimonial-card__footer">
+                <div class="testimonial-card__meta">
+                  <strong class="testimonial-card__name">Dr. Sarah Mitchell</strong>
+                  <span class="testimonial-card__role">COO, Apex Clinic Group</span>
+                  <span class="testimonial-card__location">
+                    <span class="testimonial-card__flag" aria-hidden="true">🇺🇸</span>
+                    Baltimore, United States
+                  </span>
+                </div>
+                <div class="testimonial-card__avatar" aria-hidden="true">SM</div>
+              </footer>
+            </article>
+            <article class="testimonial-card testimonial-card--web">
+              <div class="testimonial-card__border" aria-hidden="true"></div>
+              <div class="testimonial-card__glow" aria-hidden="true"></div>
+              <div class="testimonial-card__top">
+                <div class="testimonial-card__logo">NORTH<span>HEALTH</span></div>
+                <span class="testimonial-card__rating" aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                <span class="testimonial-card__mark" aria-hidden="true">“</span>
+                They delivered a patient-ready website and portal on a tight timeline.
+                The design feels premium, loads quickly, and our intake forms convert better.
+              </blockquote>
+              <footer class="testimonial-card__footer">
+                <div class="testimonial-card__meta">
+                  <strong class="testimonial-card__name">James Okonkwo</strong>
+                  <span class="testimonial-card__role">Director of Digital, North Health</span>
+                  <span class="testimonial-card__location">
+                    <span class="testimonial-card__flag" aria-hidden="true">🇬🇧</span>
+                    London, United Kingdom
+                  </span>
+                </div>
+                <div class="testimonial-card__avatar" aria-hidden="true">JO</div>
+              </footer>
+            </article>
+            <article class="testimonial-card testimonial-card--seo">
+              <div class="testimonial-card__border" aria-hidden="true"></div>
+              <div class="testimonial-card__glow" aria-hidden="true"></div>
+              <div class="testimonial-card__top">
+                <div class="testimonial-card__logo">BRIGHT<span>SMILE</span></div>
+                <span class="testimonial-card__rating" aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                <span class="testimonial-card__mark" aria-hidden="true">“</span>
+                Our local search visibility was flat for years. Within months we ranked for
+                the terms that actually bring new patients through the door.
+              </blockquote>
+              <footer class="testimonial-card__footer">
+                <div class="testimonial-card__meta">
+                  <strong class="testimonial-card__name">Elena Vasquez</strong>
+                  <span class="testimonial-card__role">Marketing Lead, Bright Smile Dental</span>
+                  <span class="testimonial-card__location">
+                    <span class="testimonial-card__flag" aria-hidden="true">🇪🇸</span>
+                    Madrid, Spain
+                  </span>
+                </div>
+                <div class="testimonial-card__avatar" aria-hidden="true">EV</div>
+              </footer>
+            </article>
+            <article class="testimonial-card testimonial-card--web">
+              <div class="testimonial-card__border" aria-hidden="true"></div>
+              <div class="testimonial-card__glow" aria-hidden="true"></div>
+              <div class="testimonial-card__top">
+                <div class="testimonial-card__logo">LAUNCH<span>GRID</span></div>
+                <span class="testimonial-card__rating" aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                <span class="testimonial-card__mark" aria-hidden="true">“</span>
+                We needed twelve campaign pages without waiting on engineering. Black Sapphire Systems
+                gave us a repeatable system and every launch shipped on schedule.
+              </blockquote>
+              <footer class="testimonial-card__footer">
+                <div class="testimonial-card__meta">
+                  <strong class="testimonial-card__name">Marcus Lindqvist</strong>
+                  <span class="testimonial-card__role">VP Marketing, LaunchGrid</span>
+                  <span class="testimonial-card__location">
+                    <span class="testimonial-card__flag" aria-hidden="true">🇸🇪</span>
+                    Stockholm, Sweden
+                  </span>
+                </div>
+                <div class="testimonial-card__avatar" aria-hidden="true">ML</div>
+              </footer>
+            </article>
+            <article class="testimonial-card testimonial-card--billing">
+              <div class="testimonial-card__border" aria-hidden="true"></div>
+              <div class="testimonial-card__glow" aria-hidden="true"></div>
+              <div class="testimonial-card__top">
+                <div class="testimonial-card__logo">SUMMIT<span>RCM</span></div>
+                <span class="testimonial-card__rating" aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                <span class="testimonial-card__mark" aria-hidden="true">“</span>
+                The coding audit recovered revenue we had written off. Their team is sharp,
+                responsive, and they explain every change in plain language.
+              </blockquote>
+              <footer class="testimonial-card__footer">
+                <div class="testimonial-card__meta">
+                  <strong class="testimonial-card__name">Priya Sharma</strong>
+                  <span class="testimonial-card__role">Practice Administrator, Summit RCM</span>
+                  <span class="testimonial-card__location">
+                    <span class="testimonial-card__flag" aria-hidden="true">🇨🇦</span>
+                    Toronto, Canada
+                  </span>
+                </div>
+                <div class="testimonial-card__avatar" aria-hidden="true">PS</div>
+              </footer>
+            </article>
+            <article class="testimonial-card testimonial-card--seo">
+              <div class="testimonial-card__border" aria-hidden="true"></div>
+              <div class="testimonial-card__glow" aria-hidden="true"></div>
+              <div class="testimonial-card__top">
+                <div class="testimonial-card__logo">COAST<span>SEO</span></div>
+                <span class="testimonial-card__rating" aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                <span class="testimonial-card__mark" aria-hidden="true">“</span>
+                One partner for billing, web, and SEO removed the handoff chaos we lived with.
+                We ship faster and report results to stakeholders with confidence.
+              </blockquote>
+              <footer class="testimonial-card__footer">
+                <div class="testimonial-card__meta">
+                  <strong class="testimonial-card__name">Daniel Reeves</strong>
+                  <span class="testimonial-card__role">Founder, Coastal Wellness Co.</span>
+                  <span class="testimonial-card__location">
+                    <span class="testimonial-card__flag" aria-hidden="true">🇦🇺</span>
+                    Sydney, Australia
+                  </span>
+                </div>
+                <div class="testimonial-card__avatar" aria-hidden="true">DR</div>
+              </footer>
+            </article>
+          </div>
+          <div class="testimonial-slider__fade" aria-hidden="true"></div>
+          <button
+            type="button"
+            class="testimonial-slider__btn"
+            id="testimonial-next"
+            aria-label="Scroll to next testimonial"
+          >
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 4. Past work -->
+      <section class="section section--portfolio reveal" id="past-work">
+        <div class="section__intro reveal-child">
+          <span class="section__eyebrow">Experience</span>
+          <h2 class="section__title title-gradient">Past work</h2>
+          <p class="section__lead">
+            Completed engagements with full scope, deliverables, and measurable outcomes—
+            across medical billing, web development, and SEO.
+          </p>
+        </div>
+        <div class="case-list">
+          <article class="case case--past reveal-child" style="--delay: 0.05s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/past-billing-multi.jpg"
+                alt="Clinic staff coordinating medical billing across multiple locations"
+                width="900"
+                height="506"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--billing">Medical Billing</span>
+              <span class="case__year">2024</span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>6-location specialty clinic group</dd>
+                </div>
+                <div>
+                  <dt>Duration</dt>
+                  <dd>8 months</dd>
+                </div>
+                <div>
+                  <dt>Region</dt>
+                  <dd>Mid-Atlantic, US</dd>
+                </div>
+              </dl>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Multi-location practice billing overhaul</h3>
+                <p class="case__summary">
+                  Unified revenue cycle management across six sites with inconsistent
+                  workflows, high denial volume, and delayed reimbursements.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Challenge</h4>
+                  <p>
+                    Each location used different coding habits and payer follow-up
+                    processes. Denials piled up in queues with no ownership, and average
+                    days in A/R exceeded 45 days.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">What we delivered</h4>
+                  <ul class="case__list">
+                    <li>Standardized charge entry and scrub rules per specialty</li>
+                    <li>Payer-specific denial playbooks and escalation paths</li>
+                    <li>Weekly AR dashboards for practice leadership</li>
+                    <li>Staff training on eligibility verification and appeals</li>
+                  </ul>
+                </div>
+                <div class="case__block case__block--outcomes">
+                  <h4 class="case__label">Outcomes</h4>
+                  <ul class="case__outcomes">
+                    <li><span class="case__stat">32%</span><span>fewer claim denials</span></li>
+                    <li><span class="case__stat">18 days</span><span>faster payment cycle</span></li>
+                    <li><span class="case__stat">$1.2M</span><span>additional collections (12 mo.)</span></li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Stack: Epic RCM, Waystar, custom denial tracker</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+
+          <article class="case case--past reveal-child" style="--delay: 0.1s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/past-web-healthcare.jpg"
+                alt="Healthcare website displayed on a monitor in a clinical setting"
+                width="900"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--web">Web Development</span>
+              <span class="case__year">2024</span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>Specialty care provider</dd>
+                </div>
+                <div>
+                  <dt>Duration</dt>
+                  <dd>5 months</dd>
+                </div>
+                <div>
+                  <dt>Deliverable</dt>
+                  <dd>Public site + patient portal</dd>
+                </div>
+              </dl>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Healthcare brand website &amp; patient portal</h3>
+                <p class="case__summary">
+                  Full digital presence refresh to match clinical quality—mobile-first,
+                  accessible, and built for appointment conversion.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Challenge</h4>
+                  <p>
+                    Legacy WordPress site scored poorly on Core Web Vitals, forms broke on
+                    mobile, and patients could not self-serve basic requests online.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">What we delivered</h4>
+                  <ul class="case__list">
+                    <li>Responsive marketing site with service-line landing pages</li>
+                    <li>Appointment request flows with CRM handoff</li>
+                    <li>Patient portal wireframes and MVP launch</li>
+                    <li>Performance, accessibility, and analytics baseline</li>
+                  </ul>
+                </div>
+                <div class="case__block case__block--outcomes">
+                  <h4 class="case__label">Outcomes</h4>
+                  <ul class="case__outcomes">
+                    <li><span class="case__stat">2.1s</span><span>mobile load (LCP)</span></li>
+                    <li><span class="case__stat">40%</span><span>more form completions</span></li>
+                    <li><span class="case__stat">AA</span><span>WCAG target on key pages</span></li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Stack: HTML/CSS/JS, Netlify, GA4, HubSpot forms</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+
+          <article class="case case--past reveal-child" style="--delay: 0.15s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/past-seo-local.jpg"
+                alt="Analytics dashboard showing SEO growth and marketing performance"
+                width="900"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--seo">SEO</span>
+              <span class="case__year">2023</span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>Regional home-services brand</dd>
+                </div>
+                <div>
+                  <dt>Duration</dt>
+                  <dd>10 months (ongoing retainer)</dd>
+                </div>
+                <div>
+                  <dt>Markets</dt>
+                  <dd>4 new cities launched</dd>
+                </div>
+              </dl>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Local SEO &amp; landing page program</h3>
+                <p class="case__summary">
+                  Search-led growth into new territories with localized pages, GBP
+                  alignment, and conversion-focused content.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Challenge</h4>
+                  <p>
+                    Organic traffic was flat; competitor location pages outranked them in
+                    every new market they entered without a repeatable SEO playbook.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">What we delivered</h4>
+                  <ul class="case__list">
+                    <li>Keyword clusters and content briefs per city + service</li>
+                    <li>16 geo-targeted landing pages with schema markup</li>
+                    <li>Google Business Profile optimization and review strategy</li>
+                    <li>Monthly rank and lead reporting</li>
+                  </ul>
+                </div>
+                <div class="case__block case__block--outcomes">
+                  <h4 class="case__label">Outcomes</h4>
+                  <ul class="case__outcomes">
+                    <li><span class="case__stat">3.2×</span><span>organic traffic</span></li>
+                    <li><span class="case__stat">Top 3</span><span>for 12 priority terms</span></li>
+                    <li><span class="case__stat">62%</span><span>more organic leads</span></li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Stack: Semrush, GSC, Screaming Frog, custom dashboards</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+
+          <article class="case case--past reveal-child" style="--delay: 0.2s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/past-billing-rcm.jpg"
+                alt="Revenue cycle documents and financial paperwork on a desk"
+                width="900"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--billing">Medical Billing</span>
+              <span class="case__year">2023</span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>Independent physician group (12 providers)</dd>
+                </div>
+                <div>
+                  <dt>Duration</dt>
+                  <dd>4 months</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>RCM audit &amp; coding</dd>
+                </div>
+              </dl>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Revenue cycle audit &amp; coding cleanup</h3>
+                <p class="case__summary">
+                  Deep review of charge capture, coding accuracy, and denial root causes
+                  after years of under-billing and write-offs.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Challenge</h4>
+                  <p>
+                    Clean claim rate hovered near 92%. Under-coded E/M levels and missing
+                    modifiers left significant revenue on the table with no clear fix list.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">What we delivered</h4>
+                  <ul class="case__list">
+                    <li>Sample claim audit across top CPT categories</li>
+                    <li>Coding correction guidelines and provider education</li>
+                    <li>Denial management SOPs by payer category</li>
+                    <li>90-day recovery plan with weekly KPI reviews</li>
+                  </ul>
+                </div>
+                <div class="case__block case__block--outcomes">
+                  <h4 class="case__label">Outcomes</h4>
+                  <ul class="case__outcomes">
+                    <li><span class="case__stat">$240K</span><span>recovered revenue</span></li>
+                    <li><span class="case__stat">99.1%</span><span>clean claim rate</span></li>
+                    <li><span class="case__stat">47%</span><span>fewer reworked claims</span></li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Stack: athenahealth, internal audit worksheets</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+
+          <article class="case case--past reveal-child" style="--delay: 0.25s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/past-web-landing.jpg"
+                alt="Developer workspace with laptop showing a modern landing page design"
+                width="900"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--web">Web Development</span>
+              <span class="case__year">2023</span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>B2B SaaS product team</dd>
+                </div>
+                <div>
+                  <dt>Duration</dt>
+                  <dd>3 months</dd>
+                </div>
+                <div>
+                  <dt>Pages</dt>
+                  <dd>12 launch landers</dd>
+                </div>
+              </dl>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Corporate landing page suite</h3>
+                <p class="case__summary">
+                  Repeatable launch system for product campaigns—fast builds, consistent
+                  branding, and SEO-ready structure from day one.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Challenge</h4>
+                  <p>
+                    Marketing needed new pages per release but engineering backlog delayed
+                    launches by weeks; bounce rates on ad traffic were high.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">What we delivered</h4>
+                  <ul class="case__list">
+                    <li>Component-based design system (hero, proof, CTA blocks)</li>
+                    <li>12 campaign pages with UTM and event tracking</li>
+                    <li>Meta titles, OG tags, and sitemap integration</li>
+                    <li>Handoff docs for internal marketing edits</li>
+                  </ul>
+                </div>
+                <div class="case__block case__block--outcomes">
+                  <h4 class="case__label">Outcomes</h4>
+                  <ul class="case__outcomes">
+                    <li><span class="case__stat">12</span><span>pages launched on schedule</span></li>
+                    <li><span class="case__stat">28%</span><span>lower bounce rate</span></li>
+                    <li><span class="case__stat">5 days</span><span>avg. build time (vs. 3 wks.)</span></li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Stack: Figma tokens, static HTML, Vercel, GTM</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+
+          <article class="case case--past reveal-child" style="--delay: 0.3s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/past-seo-technical.jpg"
+                alt="Technical SEO metrics and search performance charts on screen"
+                width="900"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--seo">SEO</span>
+              <span class="case__year">2022</span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>Established B2B industrial brand</dd>
+                </div>
+                <div>
+                  <dt>Duration</dt>
+                  <dd>6 months</dd>
+                </div>
+                <div>
+                  <dt>Trigger</dt>
+                  <dd>Post-migration visibility loss</dd>
+                </div>
+              </dl>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Technical SEO &amp; content refresh</h3>
+                <p class="case__summary">
+                  Rebuilt search visibility after a CMS migration caused indexation drops,
+                  broken redirects, and thin category pages.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Challenge</h4>
+                  <p>
+                    Organic impressions fell 40% within 60 days of launch. Thousands of
+                    URLs returned 404s or redirected chains that diluted link equity.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">What we delivered</h4>
+                  <ul class="case__list">
+                    <li>Redirect map and crawl error remediation</li>
+                    <li>Schema for products, FAQs, and organization</li>
+                    <li>45 priority pages rewritten for intent match</li>
+                    <li>Core Web Vitals and index coverage monitoring</li>
+                  </ul>
+                </div>
+                <div class="case__block case__block--outcomes">
+                  <h4 class="case__label">Outcomes</h4>
+                  <ul class="case__outcomes">
+                    <li><span class="case__stat">156%</span><span>impression growth</span></li>
+                    <li><span class="case__stat">45</span><span>pages optimized</span></li>
+                    <li><span class="case__stat">0</span><span>critical crawl errors (GSC)</span></li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Stack: GSC, Ahrefs, Contentful, Looker Studio</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. Current projects -->
+      <section class="section section--portfolio section--current reveal" id="current-projects">
+        <div class="section__intro reveal-child">
+          <span class="section__eyebrow">In progress</span>
+          <h2 class="section__title title-gradient">Current projects</h2>
+          <p class="section__lead">
+            Live engagements with timeline, milestones, and what the Black Sapphire Systems
+            team is focused on right now.
+          </p>
+        </div>
+        <div class="case-list case-list--current">
+          <article class="case case--active reveal-child" style="--delay: 0.05s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/current-billing-rcm.jpg"
+                alt="Modern hospital corridor representing an active specialty clinic engagement"
+                width="900"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--billing">Medical Billing</span>
+              <span class="case__status">
+                <span class="case__status-dot" aria-hidden="true"></span>
+                In progress
+              </span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>Growing specialty clinic</dd>
+                </div>
+                <div>
+                  <dt>Started</dt>
+                  <dd>Q1 2025</dd>
+                </div>
+                <div>
+                  <dt>Target go-live</dt>
+                  <dd>Q3 2025</dd>
+                </div>
+              </dl>
+              <div class="case__progress-wrap">
+                <div class="case__progress-label">
+                  <span>Overall progress</span>
+                  <span>68%</span>
+                </div>
+                <div class="case__progress" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" aria-label="Project progress 68 percent">
+                  <span class="case__progress-bar" style="--progress: 68%"></span>
+                </div>
+              </div>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Specialty clinic RCM migration</h3>
+                <p class="case__summary">
+                  Moving from legacy billing workflows to a unified RCM stack—claims
+                  automation, payer mapping, and front-desk training.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Current focus</h4>
+                  <p>
+                    Claims workflow automation and denial queue setup. Payer contracts
+                    are mapped; team is piloting scrub rules on live batches.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">Milestones</h4>
+                  <ol class="case__milestones">
+                    <li class="is-done">Discovery &amp; payer inventory</li>
+                    <li class="is-done">Charge master alignment</li>
+                    <li class="is-current">Claims workflow &amp; denial queues</li>
+                    <li>Staff training &amp; go-live</li>
+                    <li>30-day post-launch review</li>
+                  </ol>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">Deliverables in flight</h4>
+                  <ul class="case__list">
+                    <li>Automated eligibility checks at check-in</li>
+                    <li>Denial reason codes tied to owner assignments</li>
+                    <li>Weekly AR flash report for practice admin</li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Phase 3 of 5 · Next: staff training workshops (June)</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+
+          <article class="case case--active reveal-child" style="--delay: 0.12s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/current-web-corp.jpg"
+                alt="Web designer building a corporate brand website on multiple screens"
+                width="900"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--web">Web Development</span>
+              <span class="case__status">
+                <span class="case__status-dot" aria-hidden="true"></span>
+                In progress
+              </span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>Black Sapphire Systems (internal)</dd>
+                </div>
+                <div>
+                  <dt>Started</dt>
+                  <dd>Q4 2024</dd>
+                </div>
+                <div>
+                  <dt>Launch</dt>
+                  <dd>Live on Netlify</dd>
+                </div>
+              </dl>
+              <div class="case__progress-wrap">
+                <div class="case__progress-label">
+                  <span>Overall progress</span>
+                  <span>92%</span>
+                </div>
+                <div class="case__progress" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Project progress 92 percent">
+                  <span class="case__progress-bar" style="--progress: 92%"></span>
+                </div>
+              </div>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Black Sapphire Systems corporate site</h3>
+                <p class="case__summary">
+                  Unified corporate presence for all three service lines—premium brand,
+                  3D hero, portfolio case studies, and Web3Forms contact delivery.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Current focus</h4>
+                  <p>
+                    Launch polish and performance tuning—Lighthouse passes, form delivery
+                    verification, and portfolio content updates.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">Milestones</h4>
+                  <ol class="case__milestones">
+                    <li class="is-done">Brand &amp; layout system</li>
+                    <li class="is-done">Hero round brilliant diamond &amp; services sections</li>
+                    <li class="is-done">GitHub + Netlify deploy pipeline</li>
+                    <li class="is-current">Performance &amp; form QA</li>
+                    <li>Analytics &amp; conversion tracking</li>
+                  </ol>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">Deliverables in flight</h4>
+                  <ul class="case__list">
+                    <li>Expanded past/current project case studies</li>
+                    <li>Contact form auto-delivery (Web3Forms)</li>
+                    <li>Final mobile nav and scroll polish</li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Phase 4 of 5 · This site</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+
+          <article class="case case--active reveal-child" style="--delay: 0.19s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/current-seo-local.jpg"
+                alt="Local search and digital marketing strategy on a laptop"
+                width="900"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--seo">SEO</span>
+              <span class="case__status">
+                <span class="case__status-dot" aria-hidden="true"></span>
+                In progress
+              </span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>Multi-city healthcare provider</dd>
+                </div>
+                <div>
+                  <dt>Started</dt>
+                  <dd>Q2 2025</dd>
+                </div>
+                <div>
+                  <dt>Engagement</dt>
+                  <dd>12-month retainer</dd>
+                </div>
+              </dl>
+              <div class="case__progress-wrap">
+                <div class="case__progress-label">
+                  <span>Overall progress</span>
+                  <span>45%</span>
+                </div>
+                <div class="case__progress" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Project progress 45 percent">
+                  <span class="case__progress-bar" style="--progress: 45%"></span>
+                </div>
+              </div>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Healthcare provider local search campaign</h3>
+                <p class="case__summary">
+                  Ongoing local SEO across five cities—location pages, GBP sync, review
+                  velocity, and monthly content publishing.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Current focus</h4>
+                  <p>
+                    Content rollout for two new locations and rank tracking dashboard.
+                    Fixing NAP inconsistencies on top citation sources.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">Milestones</h4>
+                  <ol class="case__milestones">
+                    <li class="is-done">Audit &amp; keyword map</li>
+                    <li class="is-done">GBP optimization (3 cities)</li>
+                    <li class="is-current">Location page content rollout</li>
+                    <li>Review generation program</li>
+                    <li>Quarterly strategy refresh</li>
+                  </ol>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">Deliverables in flight</h4>
+                  <ul class="case__list">
+                    <li>8 new location/service landing pages</li>
+                    <li>Monthly rank &amp; lead report</li>
+                    <li>FAQ schema on top service pages</li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Month 5 of 12 · 3 cities live, 2 in content production</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+
+          <article class="case case--active case--soon reveal-child" style="--delay: 0.26s">
+            <figure class="case__media">
+              <img
+                src="assets/projects/current-web-intake.jpg"
+                alt="Healthcare professional using a tablet for patient intake forms"
+                width="900"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case__body">
+            <aside class="case__rail" aria-label="Project summary">
+              <span class="case__tag case__tag--web">Web Development</span>
+              <span class="case__status case__status--soon">
+                <span class="case__status-dot" aria-hidden="true"></span>
+                Starting soon
+              </span>
+              <dl class="case__facts">
+                <div>
+                  <dt>Client</dt>
+                  <dd>Outpatient care network (new)</dd>
+                </div>
+                <div>
+                  <dt>Kickoff</dt>
+                  <dd>July 2026</dd>
+                </div>
+                <div>
+                  <dt>Est. duration</dt>
+                  <dd>6 months</dd>
+                </div>
+              </dl>
+              <div class="case__progress-wrap">
+                <div class="case__progress-label">
+                  <span>Overall progress</span>
+                  <span>12%</span>
+                </div>
+                <div class="case__progress" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" aria-label="Project progress 12 percent">
+                  <span class="case__progress-bar" style="--progress: 12%"></span>
+                </div>
+              </div>
+            </aside>
+            <div class="case__main">
+              <header class="case__header">
+                <h3 class="case__title">Patient intake web application</h3>
+                <p class="case__summary">
+                  Custom intake forms and admin dashboard—HIPAA-conscious architecture,
+                  mobile-first UX, and EHR-friendly data export.
+                </p>
+              </header>
+              <div class="case__grid">
+                <div class="case__block">
+                  <h4 class="case__label">Current focus</h4>
+                  <p>
+                    Discovery workshops with clinical and front-desk staff. Mapping
+                    required fields, consent flows, and admin review queues.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">Milestones</h4>
+                  <ol class="case__milestones">
+                    <li class="is-current">Discovery &amp; stakeholder interviews</li>
+                    <li>Wireframes &amp; UX approval</li>
+                    <li>MVP build (intake + admin)</li>
+                    <li>Security review &amp; UAT</li>
+                    <li>Phased rollout by location</li>
+                  </ol>
+                </div>
+                <div class="case__block">
+                  <h4 class="case__label">Planned scope</h4>
+                  <ul class="case__list">
+                    <li>Multi-step intake with save &amp; resume</li>
+                    <li>Admin dashboard for submissions &amp; flags</li>
+                    <li>Encrypted storage and role-based access</li>
+                  </ul>
+                </div>
+              </div>
+              <footer class="case__footer">
+                <span>Phase 1 of 5 · Wireframes targeted for July</span>
+              </footer>
+            </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5. Why Us -->
+      <section class="section reveal" id="why-us">
+        <div class="section__intro reveal-child">
+          <span class="section__eyebrow">Why choose us</span>
+          <h2 class="section__title title-gradient">Why Black Sapphire Systems</h2>
+          <p class="section__lead">
+            One corporate umbrella. Specialized teams for billing, development, and
+            SEO—aligned on your goals from day one.
+          </p>
+        </div>
+        <div class="why-grid">
+          <article class="why-card why-card--medical reveal-child" style="--delay: 0.08s">
+            <div class="why-card__border" aria-hidden="true"></div>
+            <div class="why-card__top">
+              <div class="why-card__icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+                  <rect x="9" y="3" width="6" height="4" rx="1" />
+                  <path d="M8 13c.8 0 1.2-1.6 2.4-1.6S11.6 13 12.4 13s1.2-1.6 2.4-1.6S16.2 13 17 13" />
+                </svg>
+              </div>
+              <span class="why-card__num">01</span>
+            </div>
+            <h3 class="why-card__title">Healthcare expertise</h3>
+            <p class="why-card__text">
+              Medical billing built for accuracy, compliance, and steady cash flow.
+            </p>
+            <span class="why-card__glow" aria-hidden="true"></span>
+          </article>
+          <article class="why-card why-card--web reveal-child" style="--delay: 0.16s">
+            <div class="why-card__border" aria-hidden="true"></div>
+            <div class="why-card__top">
+              <div class="why-card__icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8" />
+                  <path d="M12 17v4" />
+                  <path d="M8 8l-2 4 2 4" />
+                  <path d="M16 8l2 4-2 4" />
+                  <path d="M11 12h2" />
+                </svg>
+              </div>
+              <span class="why-card__num">02</span>
+            </div>
+            <h3 class="why-card__title">Digital craftsmanship</h3>
+            <p class="why-card__text">
+              Modern web experiences that load fast and convert visitors into clients.
+            </p>
+            <span class="why-card__glow" aria-hidden="true"></span>
+          </article>
+          <article class="why-card why-card--seo reveal-child" style="--delay: 0.24s">
+            <div class="why-card__border" aria-hidden="true"></div>
+            <div class="why-card__top">
+              <div class="why-card__icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="10" cy="10" r="6.5" />
+                  <path d="M15.5 15.5L21 21" />
+                  <path d="M7 13l2.5-3 2 2.5L14 9" />
+                </svg>
+              </div>
+              <span class="why-card__num">03</span>
+            </div>
+            <h3 class="why-card__title">Search that scales</h3>
+            <p class="why-card__text">
+              SEO programs designed to grow visibility, traffic, and revenue over time.
+            </p>
+            <span class="why-card__glow" aria-hidden="true"></span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 6. Process -->
+      <section class="section section--process reveal" id="process">
+        <div class="section__intro reveal-child">
+          <span class="section__eyebrow">Workflow</span>
+          <h2 class="section__title title-gradient">How we work</h2>
+          <p class="section__lead">
+            Whether you need billing, a new site, or SEO—or all three—we follow a
+            clear path from discovery to delivery.
+          </p>
+        </div>
+        <div class="process-timeline">
+          <div class="process-timeline__line" aria-hidden="true">
+            <span class="process-timeline__progress" id="timeline-progress"></span>
+          </div>
+          <ol class="process-grid">
+            <li class="process-card reveal-child" style="--delay: 0.05s">
+              <span class="process-card__dot"></span>
+              <span class="process-card__num">00</span>
+              <h3 class="process-card__title">Discover</h3>
+              <p class="process-card__text">
+                Goals, workflows, audience, and which services fit your needs.
+              </p>
+            </li>
+            <li class="process-card reveal-child" style="--delay: 0.12s">
+              <span class="process-card__dot"></span>
+              <span class="process-card__num">01</span>
+              <h3 class="process-card__title">Plan</h3>
+              <p class="process-card__text">
+                Billing setup, site architecture, or SEO roadmap—scoped and aligned.
+              </p>
+            </li>
+            <li class="process-card reveal-child" style="--delay: 0.19s">
+              <span class="process-card__dot"></span>
+              <span class="process-card__num">02</span>
+              <h3 class="process-card__title">Deliver</h3>
+              <p class="process-card__text">
+                Execution across billing ops, development, and search campaigns.
+              </p>
+            </li>
+            <li class="process-card reveal-child" style="--delay: 0.26s">
+              <span class="process-card__dot"></span>
+              <span class="process-card__num">03</span>
+              <h3 class="process-card__title">Optimize</h3>
+              <p class="process-card__text">
+                Ongoing reporting, refinements, and support as you grow.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 7. Contact -->
+      <section class="section section--cta reveal" id="contact">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="cta-particles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="section__eyebrow reveal-child">Get started</span>
+        <h2 class="cta__title title-gradient reveal-child" style="--delay: 0.08s">
+          Let&rsquo;s grow with Black Sapphire Systems
+        </h2>
+        <p class="cta__lead reveal-child" style="--delay: 0.14s">
+          Send your details below—select every service you&rsquo;re interested in and
+          we&rsquo;ll reply with a tailored plan and quote.
+        </p>
+
+        <div class="contact-block reveal-child" style="--delay: 0.22s">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="contact-form__grid">
+              <div class="contact-field">
+                <label class="contact-field__label" for="contact-name">Full name</label>
+                <input
+                  class="contact-field__input"
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  placeholder="Jane Smith"
+                />
+              </div>
+              <div class="contact-field">
+                <label class="contact-field__label" for="contact-email">Email</label>
+                <input
+                  class="contact-field__input"
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  placeholder="you@company.com"
+                />
+              </div>
+              <div class="contact-field">
+                <label class="contact-field__label" for="contact-phone"
+                  >Phone <span class="contact-field__optional">(optional)</span></label
+                >
+                <input
+                  class="contact-field__input"
+                  type="tel"
+                  id="contact-phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="+1 (555) 000-0000"
+                />
+              </div>
+              <div class="contact-field">
+                <label class="contact-field__label" for="contact-company"
+                  >Company <span class="contact-field__optional">(optional)</span></label
+                >
+                <input
+                  class="contact-field__input"
+                  type="text"
+                  id="contact-company"
+                  name="company"
+                  autocomplete="organization"
+                  placeholder="Your organization"
+                />
+              </div>
+            </div>
+
+            <fieldset class="service-select" id="service-select">
+              <legend class="service-select__legend">
+                Services you&rsquo;re interested in
+                <span class="service-select__hint">Select all that apply</span>
+              </legend>
+              <div class="service-select__options" role="group" aria-label="Services">
+                <label class="service-chip service-chip--billing">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="Medical Billing"
+                  />
+                  <span class="service-chip__box" aria-hidden="true"></span>
+                  <span class="service-chip__text">Medical Billing</span>
+                </label>
+                <label class="service-chip service-chip--web">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="Web Development"
+                  />
+                  <span class="service-chip__box" aria-hidden="true"></span>
+                  <span class="service-chip__text">Web Development</span>
+                </label>
+                <label class="service-chip service-chip--seo">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="SEO & Digital Growth"
+                  />
+                  <span class="service-chip__box" aria-hidden="true"></span>
+                  <span class="service-chip__text">SEO &amp; Digital Growth</span>
+                </label>
+              </div>
+              <p class="contact-form__error" id="services-error" role="alert" hidden>
+                Please select at least one service.
+              </p>
+            </fieldset>
+
+            <div class="contact-field contact-field--full">
+              <label class="contact-field__label" for="contact-message">Message</label>
+              <textarea
+                class="contact-field__input contact-field__textarea"
+                id="contact-message"
+                name="message"
+                rows="4"
+                required
+                placeholder="Tell us about your project, timeline, and goals…"
+              ></textarea>
+            </div>
+
+            <p class="contact-form__status" id="form-status" role="status" aria-live="polite"></p>
+
+            <button type="submit" class="btn btn--ghost btn--lg btn--magnetic btn--pulse contact-form__submit">
+              <span>Send message</span>
+            </button>
+
+            <p class="contact-form__note">
+              Messages are delivered to
+              <a href="mailto:admin@blacksapcorp.com">admin@blacksapcorp.com</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <a href="#" class="logo logo--footer">
+        <span class="logo__mark">
+          <img
+            src="assets/projects/logfinal.png"
+            alt="Black Sapphire Systems"
+            class="logo__img"
+            width="64"
+            height="50"
+            decoding="async"
+          />
+        </span>
+        <span class="logo__text">
+          <span class="logo__brand">Black Sapphire</span>
+          <span class="logo__corp">Systems</span>
+        </span>
+      </a>
+      <p class="footer__tag">
+        Medical billing · Web development · SEO
+      </p>
+      <p class="footer__copy">&copy; 2020 Black Sapphire Systems. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
