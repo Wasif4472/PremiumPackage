@@ -9,7 +9,19 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const out = join(root, "deploy");
 
-const FILES = ["index.html", "styles.css", "script.js"];
+const FILES = [
+  "index.html",
+  "services.html",
+  "past-work.html",
+  "projects.html",
+  "why-us.html",
+  "process.html",
+  "feedback.html",
+  "contact.html",
+  "styles.css",
+  "script.js",
+  "pages.js",
+];
 const DIRS = ["assets"];
 
 function copy() {

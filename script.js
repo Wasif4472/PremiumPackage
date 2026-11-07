@@ -275,7 +275,7 @@ window.addEventListener(
 );
 const navSections = navLinks
   .map((link) => {
-    const id = link.getAttribute("href")?.slice(1);
+    const id = link.dataset.section || link.getAttribute("href")?.slice(1);
     const section = id ? document.getElementById(id) : null;
     return section ? { link, section } : null;
   })
@@ -300,6 +300,25 @@ function updateHeader() {
     scrollIndicator.classList.toggle("is-hidden", window.scrollY > 120);
   }
 
+  if (document.body.dataset.spa === "true") {
+    const currentFile =
+      location.pathname.split("/").pop().replace(/\.html$/, "") || "index";
+    navLinks.forEach((link) => {
+      const linkFile = new URL(link.href).pathname
+        .split("/")
+        .pop()
+        .replace(/\.html$/, "") || "index";
+      const active = linkFile === currentFile;
+      link.classList.toggle("is-active", active);
+      if (active) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+    return;
+  }
+
   if (!navSections.length) return;
 
   const offset = (header?.offsetHeight ?? 64) + 80;
@@ -322,6 +341,7 @@ function updateHeader() {
 window.addEventListener("scroll", updateHeader, { passive: true });
 window.addEventListener("resize", updateHeader, { passive: true });
 window.addEventListener("hashchange", updateHeader);
+window.addEventListener("bsc:navigate", updateHeader);
 updateHeader();
 
 /* ========== PARALLAX ========== */

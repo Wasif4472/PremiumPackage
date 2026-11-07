@@ -1,6 +1,6 @@
-# Black Sapphire Systems — Landing Page
+# Black Sapphire Systems — Website
 
-Single-page site for **Black Sapphire Systems** (medical billing, web development, SEO).
+Multi-page site for **Black Sapphire Systems** (medical billing, web development, SEO). The original homepage remains intact; navbar navigation changes the content in place while keeping the shared header and navbar fixed.
 
 ## Run in VS Code (recommended)
 
@@ -48,13 +48,30 @@ For **automatic** inbox delivery (no visitor mail app):
 
 Until then, the form opens the visitor’s email app with the message pre-filled.
 
+## Pages
+
+| Page | File |
+|---|---|
+| Home | `index.html` |
+| Services | `services.html` |
+| Past work | `past-work.html` |
+| Current projects | `projects.html` |
+| Why us | `why-us.html` |
+| Process | `process.html` |
+| Feedback | `feedback.html` |
+| Contact | `contact.html` |
+
+The secondary page URLs load their content from `index.html` with `pages.js`. Run the site through a local web server (not `file://`) so those pages can fetch the shared content.
+
 ## Project files
 
 | File        | Purpose                          |
 |------------|-----------------------------------|
-| `index.html` | Page structure and content      |
+| `index.html` | Homepage, page sections, and shared navigation |
+| `pages.js`   | Builds each secondary page from the shared sections |
 | `styles.css` | Layout and design               |
 | `script.js`  | Diamond, animations, contact form |
+| `scripts/prepare-deploy.mjs` | Copies all pages and assets into `deploy/` |
 
 ## Sections
 
