@@ -48,6 +48,12 @@ const site = document.getElementById("site-content");
 let main = document.querySelector("main");
 let sourceDocument;
 
+function pageNameFromPathname(pathname) {
+  const file = pathname.split("/").pop() || "index.html";
+  const slug = file.replace(/\.html$/, "");
+  return pageByFile.get(file) || (pages[slug] ? slug : null);
+}
+
 function showLoadError(error) {
   console.error("Could not load this page.", error);
   if (site) {
@@ -73,9 +79,7 @@ async function loadSourceDocument() {
 }
 
 function currentPageFromLocation() {
-  const file = location.pathname.split("/").pop() || "index.html";
-  const slug = file.replace(/\.html$/, "");
-  return pageByFile.get(file) || (pages[slug] ? slug : "home");
+  return pageNameFromPathname(location.pathname) || "home";
 }
 
 function pageFromHref(href) {
@@ -89,7 +93,7 @@ function pageFromHref(href) {
       (link) => link.dataset.section === url.hash.slice(1)
     );
     if (navLink) {
-      return pageByFile.get(new URL(navLink.href).pathname.split("/").pop()) || null;
+      return pageNameFromPathname(new URL(navLink.href).pathname);
     }
 
     const page = Object.entries(pages).find(
@@ -99,7 +103,7 @@ function pageFromHref(href) {
     if (url.hash === "#") return "home";
   }
 
-  return pageByFile.get(url.pathname.split("/").pop()) || null;
+  return pageNameFromPathname(url.pathname);
 }
 
 async function renderSharedLayout() {
