@@ -344,6 +344,72 @@ window.addEventListener("hashchange", updateHeader);
 window.addEventListener("bsc:navigate", updateHeader);
 updateHeader();
 
+/* ========== LIVE CHAT ========== */
+const chatToggle = document.getElementById("chat-toggle");
+const liveChat = document.getElementById("live-chat");
+const chatClose = document.getElementById("chat-close");
+const chatForm = document.getElementById("chat-form");
+const chatInput = document.getElementById("chat-input");
+const chatMessages = document.getElementById("chat-messages");
+
+function setChatOpen(open) {
+  if (!liveChat || !chatToggle) return;
+  liveChat.classList.toggle("is-open", open);
+  chatToggle.setAttribute("aria-expanded", String(open));
+  chatToggle.setAttribute("aria-label", open ? "Close live chat" : "Open live chat");
+  if (open) {
+    setTimeout(() => chatInput?.focus(), 80);
+  }
+}
+
+chatToggle?.addEventListener("click", () => {
+  const open = !liveChat?.classList.contains("is-open");
+  setChatOpen(open);
+});
+
+chatClose?.addEventListener("click", () => setChatOpen(false));
+
+function appendChatMessage(text, sender = "agent") {
+  if (!chatMessages) return;
+  const message = document.createElement("div");
+  message.className = `chat-message chat-message--${sender}`;
+  const bubble = document.createElement("span");
+  bubble.textContent = text;
+  message.appendChild(bubble);
+  chatMessages.appendChild(message);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function getAutoReply(message) {
+  const text = message.toLowerCase();
+
+  if (text.includes("billing")) {
+    return "Great — we can help with medical billing ops, claims follow-up, and reimbursement workflows. What size of practice are you running?";
+  }
+  if (text.includes("seo") || text.includes("rank") || text.includes("website") || text.includes("web")) {
+    return "Perfect. We can scope a website or SEO plan based on your goals, audience, and timeline. Would you like a quote for design, development, or growth services?";
+  }
+  if (text.includes("price") || text.includes("quote") || text.includes("budget")) {
+    return "Absolutely. Send your goals and timeline, and we’ll prepare a sample scope and estimate for you.";
+  }
+  return "Thanks for reaching out. We’ll review your request and get back with the most relevant service plan for you.";
+}
+
+chatForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const value = chatInput?.value.trim();
+  if (!value || !chatInput) return;
+
+  appendChatMessage(value, "user");
+  chatInput.value = "";
+
+  window.setTimeout(() => {
+    appendChatMessage(getAutoReply(value), "agent");
+  }, 500);
+});
+
+setChatOpen(false);
+
 /* ========== PARALLAX ========== */
 if (window.matchMedia("(min-width: 1024px)").matches) {
   const parallaxShapes = document.querySelectorAll(".floating-shapes .shape");

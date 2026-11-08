@@ -1606,6 +1606,42 @@
       </section>
     </main>
 
+    <button type="button" class="floating-cta" id="chat-toggle" aria-label="Open live chat" aria-expanded="false" aria-controls="live-chat">
+      <span class="floating-cta__icon" aria-hidden="true">✦</span>
+      <span class="floating-cta__label">Talk to us</span>
+    </button>
+
+    <aside class="live-chat" id="live-chat" aria-label="Live chat support">
+      <div class="live-chat__header">
+        <div class="live-chat__brand">
+          <span class="live-chat__status" aria-hidden="true"></span>
+          <div>
+            <strong>Black Sapphire</strong>
+            <small>We usually reply in a few minutes</small>
+          </div>
+        </div>
+        <button type="button" class="live-chat__close" id="chat-close" aria-label="Close chat">×</button>
+      </div>
+
+      <div class="live-chat__messages" id="chat-messages">
+        <div class="chat-message chat-message--agent">
+          <span>Hi there! Need a custom quote for medical billing, web design, or SEO?</span>
+        </div>
+        <div class="chat-message chat-message--user">
+          <span>Hi, I need help with a website.</span>
+        </div>
+        <div class="chat-message chat-message--agent">
+          <span>Thanks for reaching out. We’ll review your request and get back with the most relevant service plan for you.</span>
+        </div>
+      </div>
+
+      <form class="live-chat__composer" id="chat-form">
+        <label class="sr-only" for="chat-input">Type your message</label>
+        <input id="chat-input" type="text" name="message" autocomplete="off" placeholder="Type your message..." />
+        <button type="submit" aria-label="Send message">Send</button>
+      </form>
+    </aside>
+
     <footer class="footer reveal">
       <a href="#" class="logo logo--footer">
         <span class="logo__mark">
